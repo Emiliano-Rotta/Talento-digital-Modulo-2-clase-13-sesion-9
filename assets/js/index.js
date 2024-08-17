@@ -60,6 +60,7 @@ var abrirModal = () =>{
     modal.style.display = "block"
 }
 btnAbrirModal.onclick = abrirModal
+//body.onmousemove = abrirModal
 
 
 var cerrarModal = () =>{
@@ -67,3 +68,13 @@ var cerrarModal = () =>{
     modal.style.display = "none"
 }
 btnCerrarModal.onclick = cerrarModal
+
+// -------- imagen perro
+
+var perro = document.querySelector(".perro")
+
+var agrandarImagen = () => {
+    perro.style.width = "500px"
+}
+
+perro.onclick = agrandarImagen

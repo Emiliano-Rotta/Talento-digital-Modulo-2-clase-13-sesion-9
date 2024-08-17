@@ -52,11 +52,18 @@ boton.onclick = claroOscuro
 
 var modal = document.querySelector(".modal")
 var main = document.querySelector("main")
-var btnModal = document.querySelector("#btn-modal")
+var btnAbrirModal = document.querySelector("#btn-modal")
+var btnCerrarModal = document.querySelector("#btn-cerrar-modal")
 
 var abrirModal = () =>{
     main.style.display = "none"
     modal.style.display = "block"
 }
+btnAbrirModal.onclick = abrirModal
 
-btnModal.onclick = abrirModal
+
+var cerrarModal = () =>{
+    main.style.display = "block"
+    modal.style.display = "none"
+}
+btnCerrarModal.onclick = cerrarModal
